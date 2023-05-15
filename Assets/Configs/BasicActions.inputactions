@@ -15,9 +15,27 @@
                     "initialStateCheck": true
                 },
                 {
+                    "name": "Fire",
+                    "type": "Button",
+                    "id": "e81c7f67-4222-4310-8ca8-9cd9212a6f4a",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Repeat",
+                    "type": "PassThrough",
+                    "id": "c7f0b2a7-0167-4499-9789-393e8793aedb",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
                     "name": "Jump",
                     "type": "Button",
-                    "id": "a677ca51-e3af-4ce6-81d8-119bc8d1f5cd",
+                    "id": "3fa53a4e-f46a-471b-a163-0b71ab43fe86",
                     "expectedControlType": "Button",
                     "processors": "",
                     "interactions": "",
@@ -137,19 +155,30 @@
                 },
                 {
                     "name": "",
-                    "id": "db7867b4-dff0-41f6-b87d-8b76737c1a70",
-                    "path": "",
+                    "id": "a5643bfa-fb7d-40dd-bbc8-114895f09d1b",
+                    "path": "<Keyboard>/space",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "Move",
+                    "action": "Fire",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
                 {
                     "name": "",
-                    "id": "fc89f202-cf43-4c26-bacf-27bdbf9cec95",
-                    "path": "<Keyboard>/space",
+                    "id": "66fde4b7-6e2d-405d-8dda-00476aad08f3",
+                    "path": "<Keyboard>/leftCtrl",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Repeat",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "3569a1de-bc13-4fd4-be74-4cc0f58d8444",
+                    "path": "<Keyboard>/leftShift",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
