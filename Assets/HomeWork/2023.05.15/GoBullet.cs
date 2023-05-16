@@ -5,14 +5,20 @@ using UnityEngine;
 public class GoBullet : MonoBehaviour
 {
     private Rigidbody rb;
-    public float bulletSpeed;
+    [SerializeField] public float bulletSpeed;
+    [SerializeField] private GameObject Explosion;
     private void Awake()
     {
         rb = GetComponent<Rigidbody>();
     }
     private void Update()
     {
-        rb.velocity = Vector3.forward * bulletSpeed;
+        rb.velocity = transform.forward * bulletSpeed;
         Destroy(gameObject, 5f);
+    }
+    private void OnCollisionEnter(Collision collision)
+    {
+        Instantiate(Explosion, transform.position, transform.rotation);
+        Destroy(gameObject);
     }
 }
